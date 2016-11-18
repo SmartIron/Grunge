@@ -1,11 +1,11 @@
-#Documentation
+#Information for Smarte employees
 
 
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown. The easiest way to start using GitHub is to use [GitHub Desktop](https://desktop.github.com/).
 
 The best practice way to add to this documenatation is to [fork](https://help.github.com/articles/fork-a-repo/) and create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
 
-[&#8595;](#codewars) [&#8593;](#documentation)
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
 
 #Unlimited static websites hosted on GitHub with custom domain names
 
@@ -19,7 +19,7 @@ The best practice way to add to this documenatation is to [fork](https://help.gi
 - [typer.js](http://steven.codes/typerjs/)
 - [Google Charts](https://developers.google.com/chart/)
 
-[&#8595;](#codewars) [&#8593;](#documentation)
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
 
 
 #Tasks to do after you first join GitHub
@@ -46,6 +46,8 @@ The best practice way to add to this documenatation is to [fork](https://help.gi
 - [kramdown](https://github.com/gettalong/kramdown)
 - [Sass](https://github.com/sass/sass)
 
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+
 
 #Oracle VM VirtualBox
 
@@ -65,6 +67,7 @@ This section is dedicated to those that run Mac OS or Windows that need to run U
 
 More to come soon.
 
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
 
 
 #Important Reading
@@ -75,7 +78,7 @@ https://www.fastcompany.com/3040723/12-signs-your-company-has-an-enviable-workpl
 
 http://www.tiobe.com/tiobe-index/
 
-[&#8595;](#codewars) [&#8593;](#documentation)
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
 
 
 #Programming Editors
@@ -104,7 +107,7 @@ Microsoft Visual Studio - https://www.visualstudio.com
 
 Eclipse - https://eclipse.org/
 
-[&#8595;](#codewars) [&#8593;](#documentation)
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
 
 
 #Helpful links
@@ -115,7 +118,7 @@ Linguist langage extensions - https://github.com/github/linguist/blob/master/lib
 
 How to check a file checksum - http://stackoverflow.com/questions/478722/what-is-the-best-way-to-calculate-a-checksum-for-a-file-that-is-on-my-machine
 
-[&#8595;](#codewars) [&#8593;](#documentation)
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
 
 
 #Free online interactive easy quick courses
@@ -166,7 +169,7 @@ https://www.codecademy.com/learn/learn-sql
 
 https://www.codecademy.com/learn/learn-the-command-line
 
-[&#8595;](#codewars) [&#8593;](#documentation)
+[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
 
 
 #Essential Programmer Training
@@ -177,5 +180,5 @@ https://www.codecademy.com/learn/learn-the-command-line
 
 http://www.codewars.com/
 
-[&#8593;](#documentation)
+[&#8593;](#information-for-smarte-employees)
 
