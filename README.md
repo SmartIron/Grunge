@@ -22,6 +22,31 @@ The best practice way to add to this documenatation is to [fork](https://help.gi
 [&#8595;](#codewars) [&#8593;](#documentation)
 
 
+#Tasks to do after you first join GitHub
+
+##Follow all these people
+
+- [The Real Beast](https://github.com/jbampton)
+- [Preston Hunter](https://github.com/prestonhunter)
+- [Linus Torvalds](https://github.com/torvalds)
+- [Jose Valim](https://github.com/josevalim)
+- [Nobuyoshi Nakada](https://github.com/nobu)
+- [Yukihiro "Matz" Matsumoto](https://github.com/matz)
+
+##Star and Watch some projects
+
+- [The Real Beast](https://github.com/jbampton/jbampton.github.io)
+- [Linux](https://github.com/torvalds/linux)
+- [Ruby](https://github.com/ruby/ruby)
+- [Phalcon Framework](https://github.com/phalcon/cphalcon)
+- [Laravel](https://github.com/laravel/laravel)
+- [Rails](https://github.com/rails/rails)
+- [Foundation](https://github.com/zurb/foundation-sites)
+- [Jekyll](https://github.com/jekyll/jekyll)
+- [kramdown](https://github.com/gettalong/kramdown)
+- [Sass](https://github.com/sass/sass)
+
+
 #Oracle VM VirtualBox
 
 This section is dedicated to those that run Mac OS or Windows that need to run Ubuntu with [Oracle VM VirtualBox](https://www.virtualbox.org/).  Here is in depth [documentation](https://www.virtualbox.org/manual/ch01.html) on how to get VirtualBox running.
