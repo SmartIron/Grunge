@@ -5,7 +5,7 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 
 The best practice way to add to this documenatation is to [fork](https://help.github.com/articles/fork-a-repo/) and create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 #Unlimited static websites hosted on GitHub with custom domain names
 
@@ -19,7 +19,7 @@ The best practice way to add to this documenatation is to [fork](https://help.gi
 - [typer.js](http://steven.codes/typerjs/)
 - [Google Charts](https://developers.google.com/chart/)
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Tasks to do after you first join GitHub
@@ -46,7 +46,7 @@ The best practice way to add to this documenatation is to [fork](https://help.gi
 - [kramdown](https://github.com/gettalong/kramdown)
 - [Sass](https://github.com/sass/sass)
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Oracle VM VirtualBox
@@ -67,7 +67,16 @@ This section is dedicated to those that run Mac OS or Windows that need to run U
 
 More to come soon.
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
+
+
+#OS X
+
+##Homebrew
+
+[Homebrew](http://brew.sh) is an amazing package management system for OS X that installs the stuff you need that Apple didn't. [Homebrew Formula](http://brewformulas.org) are written in Ruby. You install Homebrew via the command line as shown in my short [Homebrew install video](https://www.youtube.com/watch?v=Ird_MGf3m0Q). If you install Homebrew you should try to run brew update daily. I made another [video on Homebrew](https://www.youtube.com/watch?v=HuHtuxcIbhs) that shows the typical brew update command.
+
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Windows
@@ -122,7 +131,7 @@ concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 PS C:\Users\beast>
 ```
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 ##Ruby
@@ -468,7 +477,7 @@ http://127.0.0.1:8808/ -> /gem-server-rdoc-style.css
 http://127.0.0.1:8808/ -> /favicon.ico
 ```
 
-[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 ##JRuby
@@ -607,7 +616,7 @@ irb(main):005:0> (1..5) === 3
 irb(main):006:0> exit
 PS C:\>
 ```
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Important Reading
@@ -618,7 +627,7 @@ https://www.fastcompany.com/3040723/12-signs-your-company-has-an-enviable-workpl
 
 http://www.tiobe.com/tiobe-index/
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Programming Editors
@@ -647,7 +656,7 @@ Microsoft Visual Studio - https://www.visualstudio.com
 
 Eclipse - https://eclipse.org/
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Helpful links
@@ -658,7 +667,7 @@ Linguist langage extensions - https://github.com/github/linguist/blob/master/lib
 
 How to check a file checksum - http://stackoverflow.com/questions/478722/what-is-the-best-way-to-calculate-a-checksum-for-a-file-that-is-on-my-machine
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Free online interactive easy quick courses
@@ -709,7 +718,7 @@ https://www.codecademy.com/learn/learn-sql
 
 https://www.codecademy.com/learn/learn-the-command-line
 
-[&#8595;](#codewars) [&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
 #Essential Programmer Training
@@ -720,5 +729,10 @@ https://www.codecademy.com/learn/learn-the-command-line
 
 http://www.codewars.com/
 
-[&#8593;](#information-for-smarte-employees)
+[&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
+
+#Contributions
+Fork and pull request. Simple.
+
+[&#8593;](#information-for-smarte-employees)
