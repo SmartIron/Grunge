@@ -629,7 +629,7 @@ PS C:\>
 ```
 [&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
-##Jekyll
+## Jekyll
 
 ```
 PS C:\work\github\jbampton.github.io> bundle exec jekyll serve
@@ -649,7 +649,7 @@ Configuration file: C:/work/github/jbampton.github.io/_config.yml
 [&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
 
-#Important Reading
+# Important Reading
 
 https://en.wikipedia.org/wiki/Technology_evangelist
 
@@ -659,7 +659,7 @@ http://www.tiobe.com/tiobe-index/
 
 [&#8595;](#contributions) [&#8593;](#information-for-smarte-employees)
 
-#XSLT XPath resources
+# XSLT XPath resources
 
 - [XPath Axes](http://www.w3schools.com/xml/xpath_axes.asp)
 - [XSLT 2.0 and XPath 2.0 Programmer's Reference, 4th Edition](http://www.wrox.com/WileyCDA/WroxTitle/XSLT-2-0-and-XPath-2-0-Programmer-s-Reference-4th-Edition.productCd-0470192747.html) - The Real Beast owns this large essential book from [Michael Kay](https://en.wikipedia.org/wiki/Michael_Howard_Kay)
@@ -667,9 +667,9 @@ http://www.tiobe.com/tiobe-index/
 - [XPath Wikipedia](https://en.wikipedia.org/wiki/XPath)
 
 
-#Programming Editors
+# Programming Editors
 
-###Commercial
+### Commercial
 
 oXygen XML Editor - https://www.oxygenxml.com/
 
@@ -679,7 +679,7 @@ Cross platform Linux, Mac, Windows Editor - Active State Komode IDE - http://kom
 
 Cross platform Linux, Mac, Windows - JetBrains RubyMine - The Most Intelligent Ruby and Rails IDE - https://www.jetbrains.com/ruby/
 
-###Open Source
+### Open Source
 
 Cross platform Linux, Mac, Windows Editor - Active State Komode Edit - http://komodoide.com/komodo-edit/
 
