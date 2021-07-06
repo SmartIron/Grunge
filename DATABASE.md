@@ -1,4 +1,4 @@
-#Database
+# Database
 
 - [What is a database?](#what-is-a-database)
 - [When to use NULL](#when-to-use-null)
@@ -15,7 +15,7 @@
 
 26 November 2016
 
-#What is a database?
+# What is a database?
 
 This may seem like a very simple question, but it can have different answers, depending on who you ask.
 
@@ -59,7 +59,7 @@ Database designers and programmers who create databases should be aware that whe
 
 25 November 2016
 
-#When to use NULL
+# When to use NULL
 
 I previously wrote that optimal database design will avoid using columns that allow NULL. A database schema will be faster, easier to maintain, and easier to program for if you mostly avoid allowing NULL values.
 
@@ -72,8 +72,8 @@ For text string columns (varchar), this is rarely the case. But for many other d
 Let's consider numbers. If possible, I like to avoid using NULL for number columns as well. For example if I have inventory count column, I would prefer to use zero as a default and not allow null. This would mean that the system will display zero inventory for a product if the value is not known. Rather than allow null, the default for the column is set to zero.
 
 But what if the system demands a distinction between "zero inventory" and "we don't know the inventory"? Then there are two ways to handle this:
-<br />- We could set the inventory column to allow null
-<br />- Or we could use an additional boolean column to indicate that the inventory is unknown.
+<br>- We could set the inventory column to allow null
+<br>- Or we could use an additional boolean column to indicate that the inventory is unknown.
 
 Both of these are valid options. But note that the second option actually requires an additional column. So it actually requires a more complex database schema, and potentially more complex coding.
 
@@ -84,8 +84,8 @@ But keep in mind that if you use "zero" to indicate BOTH meanings: "I don't know
 Here is another example of when it would be a good idea to NOT allow null for a numeric field:
 
 The latitude and longitude of a location can be stored as a pair of decimal values. Here is an example:
-<br />Latitude: 33.428606
-<br />Longitude: -111.927360
+<br>Latitude: 33.428606
+<br>Longitude: -111.927360
 
 But what if you want to store a location in the database before you know the latitude and longitude?
 
@@ -106,7 +106,7 @@ There are other reasons to use NULL. This is the main reason.
 
 24 November 2016
 
-#What RDBMS should you use?
+# What RDBMS should you use?
 
 The abbreviation "RDBMS" is short for "relational database management system."
 
@@ -119,25 +119,25 @@ Which should you use?
 I don't know. It depends on your situation. Some RDBMS are free and open-source. Some cost money to purchase or use. Some will work on your server of choice. Some won't. Some will work with specific front-end software that you want to use. Some won't.
 
 There are many considerations that go into choosing an RDBMS. But a key thing to understand is that all of them can utilize database designs which are optimized for these key criteria:
-<br />data integrity
-<br />speed
-<br />maintainability
+<br>data integrity
+<br>speed
+<br>maintainability
 
 The same RDBMS can be hosted on a server which runs quickly or not so quickly. Some commercial hosts (such as AWS) intentionally throttle (limit) the speed of their databases for customers at lower-paying tiers.
 
 For most information systems of small to moderate size, the choice of a specific RDBMS is not going to be the key factor in the speed and efficiency of your system. More important factors are:
-<br />- where it is hosted
-<br />- how you use it
+<br>- where it is hosted
+<br>- how you use it
 
 When a database-based information system has a query which runs slowly, a page that loads slowly, an update that takes a long time, a report that makes you wait, etc...
 
 Nearly always, if your database system is having speed problems, it is NOT because you are using MS SQL Server instead of Oracle, or because you are using MySQL instead of PostgreSQL.
 
 It isn't the choice of the RDBMS that is causing the problem. The problem stems from one of these causes:
-<br />- the database design
-<br />- the SQL query design
-<br />- how the application source code was written
-<br />- the host server settings and configuration (such as memory, available hard drive, etc.)
+<br>- the database design
+<br>- the SQL query design
+<br>- how the application source code was written
+<br>- the host server settings and configuration (such as memory, available hard drive, etc.)
 
 [&#8595;](#watch-this-space) [&#8593;](#database)
 
@@ -145,16 +145,16 @@ It isn't the choice of the RDBMS that is causing the problem. The problem stems 
 
 23 November 2016
 
-#Avoid NULL (usually)
+# Avoid NULL (usually)
 
 Columns in SQL database tables can have values. Their value can also be set to NULL. Whether or not to allow an individual column to be set to NULL is an important decision in database design.
 
 The importance of the NULL/NOT NULL decision is often overlooked. I often see inexperienced database designers use this incorrectly.
 
 Simply put: When optimizing a database for:
-<br />- data integrity
-<br />- speed
-<br />- maintainability
+<br>- data integrity
+<br>- speed
+<br>- maintainability
 
 ...it is best to set all or most columns to NOT NULL.
 
@@ -163,11 +163,11 @@ This may seem counter-intuitive, depending on when, where and how a person first
 NULL means that you don't know the value, right?
 
 So let's take this table:
-<br />Table: USERS
-<br />ID
-<br />first_name
-<br />middle_name
-<br />last_name
+<br>Table: USERS
+<br>ID
+<br>first_name
+<br>middle_name
+<br>last_name
 
 Maybe we want to collect names of users. We block rows from being created without a first and last name. But we don't want to require users to enter a middle name or middle initial. In the front-end interface, we leave that field optional.
 
@@ -201,7 +201,7 @@ When NULL-able columns should be used can be discussed another time.
 
 22 November 2016
 
-#camelCase or underscore_case?
+# camelCase or underscore_case?
 
 The formatting of table names and column names within a database schema has been debated for decades. The same discussion occurs in relation to programming source code.
 
@@ -216,11 +216,11 @@ I don't want to write anything lengthy about this. Let me point out a few genera
 - Although some RDBMS are case-insensitive with regards to table names and column names, some are case-sensitive. Moreover, the programming languages you use to interact with a database may be case-sensitive. Don't ever be sloppy with regards to case. Always capitalize names consistently. Never use alternatively-capitalized variants to signify something different.
 
 Before I whether or not you should use camelCase or underscore_case for naming tables and columns, let me point out that there ARE other alternatives, which I find even less preferable than these two naming conventions:
-<br />- alllowercaseruntogether
-<br />- ALLCAPSRUNTOGETHER
-<br />- spaces between words
-<br />- dashes-between-words
-<br />- ALL_CAPS_WITH_UNDERSCORES
+<br>- alllowercaseruntogether
+<br>- ALLCAPSRUNTOGETHER
+<br>- spaces between words
+<br>- dashes-between-words
+<br>- ALL_CAPS_WITH_UNDERSCORES
 
 These alternative formats, which you may see in some databases, are all inferior. They are either difficult to read, or they are error prone. Some of these formats might even seem impossible, such as naming tables and columns with spaces in between words. In most RDBMS, something like this IS possible, it's just a very bad idea, because such a name only works by enclosing it to force the system to recognize it as a string, such as by enclosing it within double-quotes. That's just asking for trouble, though. Also, there may be places where it won't work at all, so you would end up with a table schema which is not very portable.
 
@@ -255,9 +255,9 @@ original_product_UPC_code
 You can see how this is much easier to read as part of a schema. And it is much easier to utilize in automated name conversion scripts and functions.
 
 My advice:
-<br />- Be consistent.
-<br />- Don't go to war over naming conventions if you're a guest in an already-established database.
-<br />- if you have a choice, use underscore_case.
+<br>- Be consistent.
+<br>- Don't go to war over naming conventions if you're a guest in an already-established database.
+<br>- if you have a choice, use underscore_case.
 
 [&#8595;](#watch-this-space) [&#8593;](#database)
 
@@ -265,7 +265,7 @@ My advice:
 
 21 November 2016
 
-#When to Index?
+# When to Index?
 
 Indexing is a awesome. It really is like a magic bullet to turbo-charge the speed of your database system.
 
@@ -292,10 +292,10 @@ I only add an index to a column if it will be beneficial. I don't do it by defau
 There are many tables that may have a dozen or a few dozen columns, but which only need to have one or two of them indexed.
 
 Here is a very simple guide about when to add an index to a column:
-<br />- add an index to columns that are uses as SEARCH criteria
-<br />- add an index to columns that are used in a "SORT BY" clause
-<br />- add an index to columns that need to be referenced by FOREIGN KEY LINKS
-<br />- add an index to columns that are used in any JOINS
+<br>- add an index to columns that are uses as SEARCH criteria
+<br>- add an index to columns that are used in a "SORT BY" clause
+<br>- add an index to columns that need to be referenced by FOREIGN KEY LINKS
+<br>- add an index to columns that are used in any JOINS
 
 Note that there other index types aside from the standard index: unique contraints and primary key indices and others. We will not discuss those index types today, except to point out that if a column already has been indexed using one of these other index types, it does NOT need to be indexed again. You don't need to index the same column twice. A unique constraint index (for example) does double duty: preventing the same value from being used twice in a column AND also provides the speed optimization that a non-unique index provides.
 
@@ -312,7 +312,7 @@ A truly interactive information system which connects many relational tables to 
 
 20 November 2016
 
-#Why "ID"?
+# Why "ID"?
 
 In a previous entry I suggested that when designing a new database, the best name for an "ID column" ("primary identity column" or "primary key column") is simply:
 
@@ -320,7 +320,7 @@ ID
 
 Yet... if you have seen a wide range of databases created by different people using different RDBMS, covering different periods of time, you may have seen many different naming conventions. Here are some examples:
 
-We have have seen various databases which use different names:
+We have seen various databases which use different names:
 ID
 id
 Id
@@ -339,12 +339,12 @@ Why is "ID" the best name to use?
 Let us put aside the interesting fact that some software and source code libraries specifically look for this name and provide some benefits when using it. That is really a minor point. And it is NOT a "universal" thing. Not by a longshot.
 
 I like to use "ID" because it is very readable and instantly recognizable. It really stands out as something distinctive and different from the other column names. Look at this example of column names for a single table:
-<br />ID
-<br />name
-<br />abbreviation
-<br />description
-<br />population
-<br />capitol
+<br>ID
+<br>name
+<br>abbreviation
+<br>description
+<br>population
+<br>capitol
 
 I like the way that the capitalized form "ID" stands out.
 
@@ -356,10 +356,10 @@ I want to consistently use the same primary identity column name as a part of fo
 
 One final question:
 Why don't I use a naming convention like this for the ID columns:
-<br />STATES
-<br />state_ID
-<br />name
-<br />abbreviation
+<br>STATES
+<br>state_ID
+<br>name
+<br>abbreviation
 
 I have seen this in some database designs. In these designs, there are NO primary identity columns named "ID". These columns are all named something different.
 
@@ -376,24 +376,24 @@ Instead of having ONE name for ID columns ("ID"), you end up having many. You wo
 A table with 20 table would have 20 different tables would have 20 different names for primary identity columns. 20 is NOT as simple as 1.
 
 And you have also introduced duplication. Because what you really have, if you reference the "full name" of these columns is this:
-<br />states.state_ID
-<br />users.user_ID
-<br />products.product_ID
+<br>states.state_ID
+<br>users.user_ID
+<br>products.product_ID
 
 See how each column DUPLICATES information?
 
 If I have an ID column within "states" table, I don't need to name the column "state_ID." I already know that the "ID" column within the states table is the ID column for states.
 
 See how these column names avoid unnecessary duplication:
-<br />states.ID
-<br />users.ID
-<br />products.ID
+<br>states.ID
+<br>users.ID
+<br>products.ID
 
 So to summarize my advice on this topic:
-<br />- keep it simple
-<br />- make it easy to read
-<br />- avoid duplication
-<br />- use "ID"
+<br>- keep it simple
+<br>- make it easy to read
+<br>- avoid duplication
+<br>- use "ID"
 
 [&#8595;](#watch-this-space) [&#8593;](#database)
 
@@ -407,10 +407,10 @@ I want to discuss one of the most important aspects of database design: naming I
 What are "ID columns"? This is one simple and common way to refer to primary identity columns.
 
 For example, in a table like this:
-<br />STATES
-<br />ID	101
-<br />Name	Alabama
-<br />Code	AL
+<br>STATES
+<br>ID	101
+<br>Name	Alabama
+<br>Code	AL
 
 ...the "ID column" is the first column: "ID".
 
